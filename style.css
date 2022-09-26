@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    --StrongCyan: hsl(171, 66%, 44%);
+    --LightBlue: hsl(233, 100%, 69%);
+    --DarkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: var(--DarkGrayishBlue);
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+
+/* header */
+
+header {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+}
+
+.container img {
+    max-width: 10%;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: .7rem;
+    color: var(--GrayishBlue);
+    line-height: 1.3;
+    margin: 20px 140px;
+}
+
+.btn {
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    padding: .7rem 2rem;
+    margin: 5px;
+    text-align: center;
+    font-size: .6rem;
+}
+
+.btn-ios {
+    background-color: var(--StrongCyan);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btn-mac {
+    background-color: var(--LightBlue);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* main */
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container-1 h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main-container-1 p {
+    font-size: .8rem;
+    color: var(--GrayishBlue);
+    line-height: 1.5;
+    margin: 0 80px;
+}
+
+.container-search {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-search img {
+    width: 100%;
+}
+
+.context {
+    padding-left: 40px;
+}
+
+.context div {
+    margin-bottom: 30px;
+}
+
+.context h3 {
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.context p {
+    font-size: .7rem;
+    color: var(--GrayishBlue);
+    margin: 0 30px;
+}
+
+.access {
+    margin-top: 50px;
+}
+
+.access h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.access p {
+    font-size: .8rem;
+    color: var(--GrayishBlue);
+    margin: 0 80px;
+}
+
+.access img {
+    margin-top: 50px;
+    width: 500px;
+}
+
+.supercharge h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.supercharge p {
+    font-size: .8rem;
+    color: var(--GrayishBlue);
+}
+
+.superchargsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.superchargsection div {
+    padding: 30px 40px;
+}
+
+.superchargsection img {
+    width: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.superchargsection h3 {
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.superchargsection p {
+    font-size: .6rem;
+}
+
+.second-superc {
+    margin-top: 40px;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.second-superc img {
+    width: 4rem;
+}
+
+.clipboard {
+    margin-top: 50px;
+}
+
+.clipboard h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.clipboard p {
+    font-size: .8rem;
+    color: var(--GrayishBlue);
+    margin: 0 100px 20px 100px;
+}
+
+footer {
+    margin-top: 70px;
+    background-color: hsl(207, 36%, 95%);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.foot-img img {
+    width: 2rem;
+}
+
+footer a {
+    color: var(--DarkGrayishBlue);
+    font-size: .7rem;
+}
+
+.social-link ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-link img {
+    width: 1rem;
+}
+
+.social-link li {
+    margin-left: 10px;
+}
+
+@media(max-width:750px) {
+    header {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 5rem 0;
+    }
+    .container img {
+        max-width: 20%;
+    }
+    .container h1 {
+        margin: 10px 70px;
+    }
+    .container p {
+        margin: 20px 80px;
+    }
+    .header-button {
+        padding: 0 50px;
+    }
+    .btn {
+        display: block;
+        width: 100%;
+    }
+    .btn-ios {
+        margin-bottom: 15px;
+    }
+    .main-container-1 h2 {
+        margin: 10px 40px;
+    }
+    .main-container-1 p {
+        font-size: 0.7rem;
+    }
+    .container-search {
+        flex-direction: column;
+    }
+    .container-search img {
+        width: 100%;
+        padding: 0 30px;
+        margin-bottom: 30px;
+    }
+    .access {
+        margin-top: 60px;
+    }
+    .access p {
+        font-size: .7rem;
+    }
+    .access img {
+        width: 100%;
+    }
+    .supercharge p {
+        margin: 10px 80px;
+        font-size: .7rem;
+    }
+    .superchargsection {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .superchargsection div {
+        padding: 10px 0;
+    }
+    .second-superc {
+        display: flex;
+        flex-direction: column;
+    }
+    .second-superc div {
+        margin-bottom: 30px;
+    }
+    .second-superc img {
+        width: 5rem;
+    }
+    .clipboard h2 {
+        margin: 10px 70px;
+    }
+    .clipboard p {
+        font-size: 0.6rem;
+    }
+    .clipboard-button {
+        padding: 0 50px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .social-link {
+        margin: 0 auto;
+    }
+    .social-link li {
+        margin-left: 10px;
+    }
+}
